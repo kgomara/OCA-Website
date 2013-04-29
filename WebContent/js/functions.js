@@ -83,7 +83,7 @@ var goPortfolio = function(ele) {
 	$('#services-section').hide('slow');
 	$('#portfolio-section').show('slow');
 	$('.navbar-content li').removeClass('active');
-	$(this).parent().addClass('active');	
+	$(ele).parent().addClass('active');	
 };
 
 var goAbout = function(ele) {

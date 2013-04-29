@@ -7,3 +7,29 @@
 #about-section legend {
 	padding-left: 20px;
 }
+
+.hero-unit {
+	background-color: #0088CC;
+}
+
+.btn {
+    background-color: #008ed2;
+    background-image: linear-gradient(to bottom, #0092d6, #0088CC);
+    font-weight: bold;
+}
+
+.btn:hover, btn:focus, btn:active,
+.btn.active, .btn.disabled, .btn[diabled] {
+	background-color: #007ed2;
+    background-image: linear-gradient(to bottom, #0072d6, #0078CC);
+background-position: 0 0;
+}
+
+.navbar .divider-vertical {
+    border-left: 1px solid #0088CC;
+    border-right: 1px solid #008fcf;
+}
+
+h3 {
+	color: #0088CC;
+}
