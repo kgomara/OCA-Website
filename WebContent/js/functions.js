@@ -25,7 +25,7 @@ $(document).ready(function () {
 		e.preventDefault();
 		goAbout(this);
 	});
-	
+		
 	// setup home page button handlers
 	$('#home-section #services-btn').click(function(e) {
 		e.preventDefault();
@@ -95,3 +95,4 @@ var goAbout = function(ele) {
 	$('.navbar-content li').removeClass('active');
 	$(ele).parent().addClass('active');		
 };
+

@@ -22,7 +22,7 @@
 .btn.active, .btn.disabled, .btn[diabled] {
 	background-color: #007ed2;
     background-image: linear-gradient(to bottom, #0072d6, #0078CC);
-background-position: 0 0;
+	background-position: 0 0;
 }
 
 .navbar .divider-vertical {
@@ -32,4 +32,8 @@ background-position: 0 0;
 
 h3 {
 	color: #0088CC;
+}
+
+#services-section .hero-unit a {
+	color: white;
 }
