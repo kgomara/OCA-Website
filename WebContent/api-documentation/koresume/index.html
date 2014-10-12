@@ -36,31 +36,31 @@
 						
 						<h2>About KOResume</h2>
 
-<p>KOResume is a simple resume app.</p>
+<p>KOResume is a simple resume app. It can be used to keep an up-to-date resume handy to show friends, family, and of course, potential employers. Of equal importance is its use as a learning tool for people relatively new to programming. It is &ldquo;open source&rdquo; under the MIT license and you are free to copy and modify it. If you are interested in extending it please fork the repository and check the open issues list to see if there is something you&rsquo;d like to work on.</p>
 
-<p>IMPORTANT - do not use Xcode to generate the Core Data model - if you do you will have hundreds of errors and have to restore all the data model source. See the section below on database</p>
+<p>The code is thoroughly commented and I am interested in any feedback to improve or add explanations where needed. One of the things the project demonstrates is the use of documentation generators - specifically AppleDoc. There is an article in my <a href="http://omaraconsultingassoc.com/blog/api-documentation/">blog</a> that discusses the topic in detail - see <a href="http://omaraconsultingassoc.com/api-documentation/koresume/index.html">KOResume Reference</a>.</p>
 
 <h2>Database Maintenance</h2>
 
 <p>The app uses Core Data and a version comment has been added.</p>
 
-<p>DO NOT use the built-in &ldquo;Editor&rdquo; tool to created the NSManagedObject subclasses - download and use mogenerator instead.</p>
+<p>DO NOT use the built-in &ldquo;Editor&rdquo; tool to created the NSManagedObject subclasses - download and use mogenerator from <a href="http://rentzsch.github.io/mogenerator/">GitHub</a>.</p>
 
-<p>modgenerator implements to generation-gap design pattern to create an intermediate class file.  The entity is represented by a Class file prepended with an underscore, but you reference the normal entity name in the code.  For example, if you have an entity Foo in the model, mogenerator will create</p>
+<p>mogenerator implements a generation-gap design pattern to create an intermediate class file.  The entity is represented by a Class file prepended with an underscore, but you reference the normal entity name in the code.  For example, if you have an entity Foo in the model, mogenerator will create</p>
 
 <pre><code>    _Foo.h, _Foo.m as well as Foo.h and Foo.m, which subclass _Foo.  
 </code></pre>
 
-<p>Subsequent invocations of mogenerator WILL NOT overwrite the Foo.h or Foo.m files.</p>
+<p>Subsequent invocations of mogenerator WILL NOT overwrite the Foo.h or Foo.m files, so you are safe to add custom code without fear of losing your customizations as would happen if you use the built-in Editor.</p>
 
-<p>At the terminal invoke mogenerator navigate to KOResume/KOResume-iPhone:</p>
+<p>Once you have mogenator installed on your system you can run it by selecting the Mogenerator scheme in the build menu. If you prefer the command line just open a terminal window, navigate to KOResume/KOResume-iPhone, and invoke mogenerator:</p>
 
-<pre><code>    mogenerator -m Classes/KOResume.xcdatamodeld/KOResume.xcdatamodel  -O Classes
+<pre><code>    mogenerator --template-var arc=true -m Classes/DataModel/KOResume.xcdatamodeld/KOResume.xcdatamodel  -O Classes/DataModel
 </code></pre>
 
 <h2>License</h2>
 
-<p>KOResume is licensed under MIT license.</p>
+<p>KOResume is licensed under MIT <a href="https://github.com/kgomara/KOResume3/blob/master/LICENSE">License</a>.</p>
 						
 						
 					</div>
@@ -73,7 +73,13 @@
 						<h2 class="index-title">Class References</h2>
 						<ul>
 							
+							<li><a href="Classes/Crashlytics.html">Crashlytics</a></li>
+							
+							<li><a href="Classes/OCRAccomplishmentTableViewCell.html">OCRAccomplishmentTableViewCell</a></li>
+							
 							<li><a href="Classes/OCRAppDelegate.html">OCRAppDelegate</a></li>
+							
+							<li><a href="Classes/OCRBaseDetailTableViewController.html">OCRBaseDetailTableViewController</a></li>
 							
 							<li><a href="Classes/OCRBaseDetailViewController.html">OCRBaseDetailViewController</a></li>
 							
@@ -81,7 +87,19 @@
 							
 							<li><a href="Classes/OCRCoverLtrViewController.html">OCRCoverLtrViewController</a></li>
 							
-							<li><a href="Classes/OCRPackagesViewController.html">OCRPackagesViewController</a></li>
+							<li><a href="Classes/OCRPackagesCell.html">OCRPackagesCell</a></li>
+							
+							<li><a href="Classes/OCRPackagesTableViewController.html">OCRPackagesTableViewController</a></li>
+							
+							<li><a href="Classes/OCRResumeEducationViewController.html">OCRResumeEducationViewController</a></li>
+							
+							<li><a href="Classes/OCRResumeJobsDetailViewController.html">OCRResumeJobsDetailViewController</a></li>
+							
+							<li><a href="Classes/OCRResumeJobsTableViewController.html">OCRResumeJobsTableViewController</a></li>
+							
+							<li><a href="Classes/OCRResumeOverviewViewController.html">OCRResumeOverviewViewController</a></li>
+							
+							<li><a href="Classes/OCRTableViewHeaderCell.html">OCRTableViewHeaderCell</a></li>
 							
 						</ul>
 					</div>
@@ -93,6 +111,10 @@
 						<h2 class="index-title">Protocol References</h2>
 						<ul>
 							
+							<li><a href="Protocols/CLSCrashReport.html">CLSCrashReport</a></li>
+							
+							<li><a href="Protocols/CrashlyticsDelegate.html">CrashlyticsDelegate</a></li>
+							
 							<li><a href="Protocols/OCRDetailViewProtocol.html">OCRDetailViewProtocol</a></li>
 							
 							<li><a href="Protocols/SubstitutableDetailViewController.html">SubstitutableDetailViewController</a></li>
@@ -100,6 +122,15 @@
 						</ul>
 						
                         
+						
+						<h2 class="index-title">Category References</h2>
+						<ul>
+							
+							<li><a href="Categories/NSString+KOResume.html">NSString(KOResume)</a></li>
+							
+							<li><a href="Categories/UITextField+KOResume.html">UITextField(KOResume)</a></li>
+							
+						</ul>
 						
 					</div>
 					
@@ -110,7 +141,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 OMaraConsultingAssociates. All rights reserved. (Last updated: 2014-01-19)</span><br />
+						<p><span class="copyright">&copy; 2014 OMaraConsultingAssociates. All rights reserved. (Last updated: 2014-10-12)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						

@@ -31,12 +31,36 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/backButtonCached">&nbsp;&nbsp;&nbsp;&nbsp;backButtonCached</option>
+	
+	<option value="//api/name/backButtonTitle">&nbsp;&nbsp;&nbsp;&nbsp;backButtonTitle</option>
+	
+	<option value="//api/name/fetchedResultsController">&nbsp;&nbsp;&nbsp;&nbsp;fetchedResultsController</option>
+	
+	<option value="//api/name/masterPopoverController">&nbsp;&nbsp;&nbsp;&nbsp;masterPopoverController</option>
+	
+	<option value="//api/name/popoverControllerCached">&nbsp;&nbsp;&nbsp;&nbsp;popoverControllerCached</option>
+	
+	<option value="//api/name/selectedManagedObject">&nbsp;&nbsp;&nbsp;&nbsp;selectedManagedObject</option>
 	
 	
 	
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/configureView">&nbsp;&nbsp;&nbsp;&nbsp;- configureView</option>
+	
+	<option value="//api/name/reloadFetchedResults:">&nbsp;&nbsp;&nbsp;&nbsp;- reloadFetchedResults:</option>
 	
 	
 	
@@ -52,13 +76,41 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backButtonCached">backButtonCached</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backButtonTitle">backButtonTitle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fetchedResultsController">fetchedResultsController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/masterPopoverController">masterPopoverController</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/popoverControllerCached">popoverControllerCached</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedManagedObject">selectedManagedObject</a></span></li>
+	
+</ul></li>
 
 
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureView">configureView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reloadFetchedResults:">reloadFetchedResults:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
@@ -85,7 +137,7 @@
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">OCRBaseDetailViewController.h</td>
+	<td class="specification-value">OCRDetailViewProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -95,20 +147,404 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>OCRDetailViewProtocol is a protocol that detail view controllers must adopt. It defines methods that the base class can invoke of subclasses.</p>
+						<p>OCRDetailViewProtocol is a protocol that detail view controllers must adopt. It defines methods that
+the base class can invoke on subclasses.</p>
 					</div>
 					
 					
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedManagedObject">&nbsp;&nbsp;selectedManagedObject</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fetchedResultsController">&nbsp;&nbsp;fetchedResultsController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backButtonCached">&nbsp;&nbsp;backButtonCached</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/popoverControllerCached">&nbsp;&nbsp;popoverControllerCached</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/masterPopoverController">&nbsp;&nbsp;masterPopoverController</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backButtonTitle">&nbsp;&nbsp;backButtonTitle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureView">&ndash;&nbsp;configureView</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reloadFetchedResults:">&ndash;&nbsp;reloadFetchedResults:</a></code>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
 					
 					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/backButtonCached" title="backButtonCached"></a>
+	<h3 class="subsubtitle method-title">backButtonCached</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A property used by the master view to cache the back button.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIBarButtonItem *backButtonCached</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backButtonTitle" title="backButtonTitle"></a>
+	<h3 class="subsubtitle method-title">backButtonTitle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A property used by the master view to set the back button title.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *backButtonTitle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fetchedResultsController" title="fetchedResultsController"></a>
+	<h3 class="subsubtitle method-title">fetchedResultsController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The fetchedResultsController used to retrieve the selectedPackage.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/masterPopoverController" title="masterPopoverController"></a>
+	<h3 class="subsubtitle method-title">masterPopoverController</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A reference to the master view&rsquo;s popoverController.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIPopoverController *masterPopoverController</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/popoverControllerCached" title="popoverControllerCached"></a>
+	<h3 class="subsubtitle method-title">popoverControllerCached</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A property used by the master view to cache the popover controller.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) UIPopoverController *popoverControllerCached</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedManagedObject" title="selectedManagedObject"></a>
+	<h3 class="subsubtitle method-title">selectedManagedObject</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The managed object the user selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSManagedObject *selectedManagedObject</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Subclasses should either cast or create a type appropriate reference to this object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/configureView" title="configureView"></a>
+	<h3 class="subsubtitle method-title">configureView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The method is called on the subclass when the <a href="#//api/name/selectedManagedObject">selectedManagedObject</a> changes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The subclass should update it&rsquo;s view to reflect the new data and perform other operations
+appropriate for its context.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reloadFetchedResults:" title="reloadFetchedResults:"></a>
+	<h3 class="subsubtitle method-title">reloadFetchedResults:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reloads the fetched Results</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reloadFetchedResults:(NSNotification *)<em>aNote</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>aNote</em></dt>
+			<dd><p>The NSNotification object, or nil.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">OCRDetailViewProtocol.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
                     
@@ -123,7 +559,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2014 OMaraConsultingAssociates. All rights reserved. (Last updated: 2014-01-19)</span><br />
+						<p><span class="copyright">&copy; 2014 OMaraConsultingAssociates. All rights reserved. (Last updated: 2014-10-12)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
 						
