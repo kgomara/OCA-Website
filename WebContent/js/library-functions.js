@@ -90,11 +90,21 @@ function searchRefs() {
 	// Get the search criteria in lower case
 	var searchTerm = $("#search-criteria").val().toLowerCase();
 	console.log("search-criteria=" + searchTerm);
-	// Iterate over all the panel-body divs
-	$(".panel .panel-body").each(function() {
+	// Iterate over all the panel divs
+	$(".panel").each(function() {
 		var found = false;
+		// Search the titles
+		$(this).find(".panel-heading").each(function() {
+			var refTitle = $(this).text().toLowerCase();
+			if (refTitle.indexOf(searchTerm) != -1) {
+				// The search term was found in this refTitle, set the found variable true
+				found = true;
+				// ...and return from this function
+				return false;
+			}
+		});
 		// Iterate over the list of tags
-		$(this).find("ul").each(function() {
+		$(this).find(".panel-body ul").each(function() {
 			// get a tag in lower case
 			var tag = $(this).text().toLowerCase();
 // 			console.log("tag=" + tag);
@@ -105,7 +115,7 @@ function searchRefs() {
 				// ...and return from this function
 				return false;
 			}
-		})
+		});
 		// Set the visibility of the containing panel based on whether or not the search term was found in the list of tags
 		$(this).closest('.panel')[found ? 'show' : 'hide']();
 	})
