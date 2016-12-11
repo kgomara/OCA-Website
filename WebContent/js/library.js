@@ -1,51 +1,363 @@
+const AGILE 					= "agile";
+const CODE 						= "code";
+const ANDROID 					= "android";
+const APACHE 					= "apache";
+const HTTP 						= "http";
+const SERVER		 			= "server";
+const JAVA 						= "java";
+const CAMEL 					= "camel";
+const EAI 						= "eai";
+const CASSANDRA 				= "cassandra";
+const NOSQL 					= "nosql";
+const CONTINUOUS_INTEGRATION 	= "ci";
+const HUDSON 					= "hudson";
+const CLOUD 					= "cloud";
+const AWS 						= "aws";
+const GAE 						= "gae";
+const AZURE 					= "azure";
+const COUCHBASE 				= "couchbase";
+const CPP 						= "c++";
+const CSS 						= "css";
+const DEPLOYMENT 				= "deployment";
+const DART 						= "dart";
+const DATA_MINING 				= "data mining";
+const PYTHON 					= "python";
+const DATA_WAREHOUSE			= "data warehouse";
+const MYSQL						= "mysql";
+const JAVASCRIPT				= "javascript";
+const DEBUGGING					= "debugging";
+const PATTERNS					= "patterns";
+const DNS						= "dns";
+const NETWORK					= "network";
+const DOCKER					= "docker";
+const DRUPAL					= "drupal";
+const CONTENT_MAMAGEMENT		= "content management";
+const ECLIPSE					= "eclipse";
+const IDE						= "ide";
+const JPA						= "jpa";
+const ORM						= "orm";
+const FITNESSE					= "fitnesse";
+const TESTING					= "testing";
+const QA						= "qa";
+const FLASH						= "flash";
+const IOS						= "ios";
+const GIT						= "git";
+const SCM						= "scm";
+const VCS						= "vcs";
+const GLASSFISH					= "glassfish";
+const APPLICATION_SERVER		= "application server";
+const HADOOP					= "hadoop";
+const HBASE						= "hbase";
+const HTML 						= "html";
+const CANVAS					= "canvas";
+const MOBILE					= "mobile";
+
+
 var libraryData = [
+	// Refcards
 	{
 		"type":			"refcard",
-		"fileName":		"agile_adoption-reducecost.pdf",
 		"title":		"Agile Adoption: Reducing Cost",
-		"description":	"Some of the costs of software development are associated with man hours needed to build the system, others with cost of maintenance over time, and yet others include hardware as well as software platform costs. Practices that educe any or all of these costs without sacrificing quality reduce the overall cost of the system.",
+		"url":			"library/agile_adoption-reducecost.pdf",
 		"tags": [
-			"agile"
+			AGILE
 		]
 	},
 	{
 		"type":			"refcard",
-		"fileName":		"agile_adoption.pdf",
 		"title":		"Agile Adoption: Decreasing Time to Market",
-		"description":	"This Refcard is focused on helping you evaluate and choose the practices for your team or organization when getting to market faster is of prime importance. Instead of focusing on entire methods such as Scrum and XP, we will talk about the practices that are the building blocks of these methods such as iterations and automated developer tests.",
+		"url":			"library/agile_adoption.pdf",
 		"tags": [
-			"agile"
+			AGILE
 		]
 	},
 	{
 		"type":			"refcard",
-		"fileName":		"agile_improve_quality.pdf",
 		"title":		"Agile Adoption: Improving Software Quality",
-		"description":	"The vast majority of software projects suffer from a steady degradation of design quality and it becomes more and more difficult to maintain the software with the same level of quality. As the software ages it calcifies and becomes harder and harder to maintain. In some cases it becomes too expensive to maintain and so it the software is put to rest and rewritten. In others, the software is released with a steadily increasing number of defects. Both of these common situations are deeply unsatisfying, but there is another way.",
+		"url":			"library/agile_improve_quality.pdf",
 		"tags": [
-			"agile"
+			AGILE
 		]
 	},
 	{
 		"type":			"refcard",
-		"fileName":		"android.pdf",
 		"title":		"Code Gems for Android Developers",
-		"description":	"<p>Android is a stack of operating system, middle ware and applications developed by Google that is dedicated to mobile devices. Android relies on Linux kernel 2.6 for core services.</p><p>The Android platform provides API and Tools to develop applications using Java Platform. It features Dalvik Virtual Machine, SQLite, an integrated browser, application framework, as well as various media and hardware sources.</p>",
+		"url":			"library/android.pdf",
 		"tags": [
-			"android", "code tips and tricks"
+			ANDROID, CODE, MOBILE
 		]
 	},
 	{
 		"type":			"refcard",
-		"fileName":		"ApacheHTTPD_1.pdf",
 		"title":		"Essential Apache HTTP Server",
-		"description":	"Apache httpd is the world’s most popular web server, running more than half of all the websites on the planet. It runs on every modern operating system, and has numerous modules – both included with the base distribution, and third-party modules – which provide a wide range of optional functionality, for every type of website.",
+		"url":			"library/ApacheHTTPD_1.pdf",
 		"tags": [
-			"apache", "http", "server"
+			APACHE, HTTP, SERVER
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Camel Essential Components",
+		"url":			"library/camel_0.pdf",
+		"tags": [
+			CAMEL, EAI
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Apache Cassandra",
+		"url":			"library/Cassandra.pdf",
+		"tags": [
+			CASSANDRA, APACHE, NOSQL
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"CI: Servers and Tools",
+		"url":			"library/ci_servers_tools_0.pdf",
+		"tags": [
+			CONTINUOUS_INTEGRATION, HUDSON
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Cloud Computing: Getting Started",
+		"url":			"library/cloud-computing.pdf",
+		"tags": [
+			CLOUD, AWS, GAE, AZURE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"CI: Patterns and Anti-Patterns",
+		"url":			"library/continuous-integration_1_0.pdf",
+		"tags": [
+			CONTINUOUS_INTEGRATION, PATTERNS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Couchbase API",
+		"url":			"library/couchbaseAPI_2.pdf",
+		"tags": [
+			COUCHBASE, NOSQL
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Core C++",
+		"url":			"library/cpp_5.pdf",
+		"tags": [
+			CODE, CPP
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"CSS3: Basics",
+		"url":			"library/css3_basics.pdf",
+		"tags": [
+			CSS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Deployment Automation Patterns",
+		"url":			"library/DAP_2.pdf",
+		"tags": [
+			DEPLOYMENT, PATTERNS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Core Dart: Client Web Language",
+		"url":			"library/dart_1.pdf",
+		"tags": [
+			DART, CODE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Data Mining",
+		"url":			"library/data-mining_0.pdf",
+		"tags": [
+			DATA_MINING, PYTHON
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Data Warehousing",
+		"url":			"library/DataWarehousing.pdf",
+		"tags": [
+			DATA_WAREHOUSE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Database Partioning with MySQL",
+		"url":			"library/DBPartitioning_2.pdf",
+		"tags": [
+			MYSQL
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Debugging Javascript",
+		"url":			"library/DebuggingJavascript_2.pdf",
+		"tags": [
+			JAVASCRIPT, DEBUGGING, CODE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Design Patterns",
+		"url":			"library/designpatterns.pdf",
+		"tags": [
+			PATTERNS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Practical DNS",
+		"url":			"library/DNS.pdf",
+		"tags": [
+			DNS, NETWORK
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with Docker",
+		"url":			"library/docker.pdf",
+		"tags": [
+			DEPLOYMENT, DOCKER
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with Drupal",
+		"url":			"library/drupal_1.pdf",
+		"tags": [
+			DRUPAL, CONTENT_MAMAGEMENT
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with Eclipse",
+		"url":			"library/eclipse_online.pdf",
+		"tags": [
+			ECLIPSE, IDE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"EclipseLink JPA",
+		"url":			"library/eclipselinkjpa-3_1.pdf",
+		"tags": [
+			JPA, ORM
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Essential Admin for MySQL 5.5",
+		"url":			"library/Essential-Admin-MySQL5.5_1.pdf",
+		"tags": [
+			MYSQL
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with FitNesse",
+		"url":			"library/fitnesse_1.pdf",
+		"tags": [
+			FITNESSE, TESTING, QA
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Adobe Flash Builder 4.5",
+		"url":			"library/flashbuilder45_1.pdf",
+		"tags": [
+			IDE, FLASH
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Flex Mobile Development",
+		"url":			"library/FlexMobileDevelopment_0.pdf",
+		"tags": [
+			IDE, FLASH, ANDROID, IOS, MOBILE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with Git",
+		"url":			"library/git_2.pdf",
+		"tags": [
+			GIT, SCM, VCS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Git Patterns and Anti-Patterns",
+		"url":			"library/git-patterns-antipatterns_1.pdf",
+		"tags": [
+			GIT, PATTERNS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Getting Started with Glassfish",
+		"url":			"library/glassfish-appserver-update_1.pdf",
+		"tags": [
+			GLASSFISH, APPLICATION_SERVER
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Google App Engine for Java",
+		"url":			"library/google-app-engine-4.pdf",
+		"tags": [
+			GAE, JAVA
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"Apache HBase",
+		"url":			"library/HBase_5.pdf",
+		"tags": [
+			APACHE, NOSQL, HADOOP, HBASE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"HTML5 Evolution of Web Standards",
+		"url":			"library/html5_1.pdf",
+		"tags": [
+			HTML
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"HTML5 Canvas",
+		"url":			"library/html5-canvas_0.pdf",
+		"tags": [
+			HTML, CANVAS
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"HTML5 Mobile Development",
+		"url":			"library/html5-mobile_0.pdf",
+		"tags": [
+			HTML, MOBILE
+		]
+	},
+	{
+		"type":			"refcard",
+		"title":		"HTML5 Web Workers",
+		"url":			"library/HTML5-webworkers_0.pdf",
+		"tags": [
+			HTML, JAVASCRIPT
 		]
 	}
 ];
 
-var tags = [
-	"agile", "android", "code tips and tricks", "apache", "http", "server"
-];
