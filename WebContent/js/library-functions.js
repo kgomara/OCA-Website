@@ -89,7 +89,7 @@ function makeUL(array) {
 function searchRefs() {
 	// Get the search criteria in lower case
 	var searchTerm = $("#search-criteria").val().toLowerCase();
-	console.log("search-criteria=" + searchTerm);
+// 	console.log("search-criteria=" + searchTerm);
 	// Iterate over all the panel divs
 	$(".panel").each(function() {
 		var found = false;
