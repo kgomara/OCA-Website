@@ -54,6 +54,10 @@ h3 {
 	padding-bottom: 40px;
 }
 
+#about-section .hero-unit a {
+	color: white;
+}
+
 #oca-footer {
 	padding: 10px 0px 10px 0px;
 	background-color: #f2f2f2;
@@ -101,4 +105,8 @@ h3 {
     #grid[data-columns]::before {
         content: '4 .col-md-3';
     }
+}
+
+.sub-head {
+	font-weight: 400
 }
