@@ -44,6 +44,15 @@ $(document).ready(function () {
 });
 
 /**
+ * Helper functions
+ */
+ function scroll_Top() {
+	$('html, body').animate({
+        scrollTop: 0
+    }, 500);
+ }
+
+/**
  * These function handle the navigation
  * 
  * Each hides all the other sections and shows itself,
@@ -58,6 +67,7 @@ var goHome = function(ele) {
 	$('#home-section').show('slow');
 	$('.navbar-content li').removeClass('active');
 	$(ele).parent().addClass('active');
+	scroll_Top();
 };
 
 var goServices = function(ele) {
@@ -68,6 +78,7 @@ var goServices = function(ele) {
 	$('#services-section').show('slow');
 	$('.navbar-content li').removeClass('active');
 	$(ele).parent().addClass('active');		
+	scroll_Top();
 };
 
 var goPortfolio = function(ele) {
@@ -78,6 +89,7 @@ var goPortfolio = function(ele) {
 	$('#portfolio-section').show('slow');
 	$('.navbar-content li').removeClass('active');
 	$(ele).parent().addClass('active');	
+	scroll_Top();
 };
 
 var goAbout = function(ele) {
@@ -88,5 +100,6 @@ var goAbout = function(ele) {
 	$('#about-section').show('slow');
 	$('.navbar-content li').removeClass('active');
 	$(ele).parent().addClass('active');		
+	scroll_Top();
 };
 
