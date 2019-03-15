@@ -41,12 +41,6 @@ $(document).ready(function () {
 		e.preventDefault();
 		goAbout($('#about-tab a'));
 	});
-	
-	// handle the link on the services page --> about
-	$('#services-section .hero-unit a').click(function(e) {
-		e.preventDefault();
-		goAbout($('#about-tab a'));		
-	});
 });
 
 /**
