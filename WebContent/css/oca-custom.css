@@ -10,6 +10,8 @@
 
 .hero-unit {
 	background-color: #0088CC;
+	padding-left: 20px;
+	padding-right: 20px
 }
 
 .btn {
@@ -40,6 +42,8 @@
 .navbar .divider-vertical {
     border-left: 1px solid #0088CC;
     border-right: 1px solid #008fcf;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 h3 {
@@ -108,5 +112,9 @@ h3 {
 }
 
 .sub-head {
-	font-weight: 400
+	font-weight: 400;
+}
+
+.navbar .nav > li > a {
+    padding: 10px 5px 10px;
 }
