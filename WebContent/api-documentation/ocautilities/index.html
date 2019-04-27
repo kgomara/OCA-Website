@@ -49,7 +49,7 @@
 <p>Coming - add instructions to use as a Git Subproject</p>
 
 <ol>
-<li>Add the lib<a href="Classes/OCAUtilities.html">OCAUtilities</a>.a file to your target(s).</li>
+<li>Add the libOCAUtilities.a file to your target(s).</li>
 <li>Add the .h file using the new file. Be sure to Check the &ldquo;Copy items into destination groups&rsquo;s folder&rdquo; checkbox.</li>
 </ol>
 
@@ -103,11 +103,11 @@
 <ol>
 <li>Build for device.</li>
 <li>Right-click the .a Product and Show In Finder.</li>
-<li>Rename to indicate its the device build - e.g., lib<a href="Classes/OCAUtilities.html">OCAUtilities</a>_device.a</li>
-<li>Repeat 1-3 building for simulator and rename the product lib<a href="Classes/OCAUtilities.html">OCAUtilities</a>_simulator.a</li>
+<li>Rename to indicate its the device build - e.g., libOCAUtilities_device.a</li>
+<li>Repeat 1-3 building for simulator and rename the product libOCAUtilities_simulator.a</li>
 <li>Put the two .a files into the same folder</li>
 <li>In terminal, navigate to the folder containing the libraries and run the following command:
-lipo -create lib<a href="Classes/OCAUtilities.html">OCAUtilities</a><em>device.a lib<a href="Classes/OCAUtilities.html">OCAUtilities</a></em>simulator.a -output lib<a href="Classes/OCAUtilities.html">OCAUtilities</a>.a</li>
+lipo -create libOCAUtilitiesdevice.a libOCAUtilitiessimulator.a -output libOCAUtilities.a</li>
 <li>Copy <a href="Classes/OCAUtilities.html">OCAUtilities</a>.h into the same folder.</li>
 <li>This folder now contains the static library and the associated .h file</li>
 <li>Copy the folder to the O'Mara Consulting Associates Library container.</li>
