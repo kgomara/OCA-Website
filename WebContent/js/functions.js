@@ -6,7 +6,6 @@
 
 $(document).ready(function () {
 	// setup the tab click handlers
-	var self = this;
 	$('#home-tab a').click(function(e) {
 		e.preventDefault();
 		goHome(this);
@@ -14,7 +13,6 @@ $(document).ready(function () {
 
 	$('#services-tab a').click(function(e) {
 		e.preventDefault();
-	console.log('this = ', this);
 		goServices(this);
 	});
 	
@@ -74,7 +72,6 @@ var goHome = function(ele) {
 
 var goServices = function(ele) {
 	// Update the UI to Services state
-	console.log('this = ', $);
 	$('#home-section').hide('slow');
 	$('#portfolio-section').hide('slow');
 	$('#about-section').hide('slow');
