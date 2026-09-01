@@ -1,5 +1,5 @@
 /**
- * functions.js
+ * library-functions.js
  * 
  * Just a tiny bit of JavaScript to handle navigation
  */

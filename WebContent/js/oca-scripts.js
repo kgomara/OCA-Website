@@ -1,5 +1,5 @@
 /**
- * functions.js
+ * oca-scripts.js
  * 
  * Just a tiny bit of JavaScript to handle navigation
  */
@@ -41,6 +41,8 @@ $(document).ready(function () {
 		e.preventDefault();
 		goAbout($('#about-tab a'));
 	});
+
+	showSectionFromHash(window.location.hash);
 });
 
 /**
@@ -51,6 +53,21 @@ $(document).ready(function () {
         scrollTop: 0
     }, 500);
  }
+
+function showSectionFromHash(hash) {
+	if (hash === '#home-section') {
+		goHome($('#home-tab a'));
+		window.setTimeout(function() {
+			window.scrollTo(0, 0);
+		}, 600);
+	} else if (hash === '#services-section') {
+		goServices($('#services-tab a'));
+	} else if (hash === '#portfolio-section') {
+		goPortfolio($('#portfolio-tab a'));
+	} else if (hash === '#about-section') {
+		goAbout($('#about-tab a'));
+	}
+}
 
 /**
  * These function handle the navigation
