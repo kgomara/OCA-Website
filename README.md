@@ -17,8 +17,8 @@ css/
   oca-styles.css        Project-specific styles
 js/
   oca-scripts.js        Main page navigation behavior
-  library.js            Technical library data
-  library-functions.js  Technical library rendering and search
+  oca-bookshelf-scripts.js  Bookshelf data
+  bookshelf.js          Bookshelf rendering and search
 img/                    Site images
 docs/                   Certificates and document thumbnails
 library/                Technical library PDF files
