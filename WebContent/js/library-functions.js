@@ -29,29 +29,31 @@ function append(title, tags, url) {
 	// Get the div that is the grid container
 	var grid = document.getElementById('grid');
 	
-	// Create a panel - see twitter Bootstrap http://getbootstrap.com/components/#panels
-	var panel = document.createElement('div');
-	// ...set classes on the panel div 
-	panel.className ="panel panel-default pull-left col-md-3 col-sm-5 col-xs-12";
+	var column = document.createElement('div');
+	column.className = "col-12 col-sm-6 col-lg-3";
 
-	// Create a panel heading object to contain the document title as a link
+	var card = document.createElement('div');
+	card.className ="card h-100 library-card";
+
+	// Create a card heading object to contain the document title as a link
 	var	panelHead = document.createElement('div');
-	panelHead.className = "panel-heading";
+	panelHead.className = "card-header";
 	// ...create the <a href... anchor and append it to the panel heading div
 	panelHead.appendChild(makeHref(url, title));
-	// ...append the panel heading to the panel
-	panel.appendChild(panelHead);
+	// ...append the card heading to the card
+	card.appendChild(panelHead);
 	
-	// Create the panel body and set it's classes
+	// Create the card body and set its classes
 	var	panelBody = document.createElement('div');
-	panelBody.className = "panel-body";
+	panelBody.className = "card-body";
 	// ...create a <ul... of the tags and append it to the panel body div
 	panelBody.appendChild(makeUL(tags));
-	// ...append the panel body to the panel
-	panel.appendChild(panelBody);
+	// ...append the card body to the card
+	card.appendChild(panelBody);
 	
-	// Finally, append the panel to the grid container
-	grid.appendChild(panel);
+	// Finally, append the card to the grid container
+	column.appendChild(card);
+	grid.appendChild(column);
 }
 
 function makeHref(url, title) {
@@ -90,11 +92,11 @@ function searchRefs() {
 	// Get the search criteria in lower case
 	var searchTerm = $("#search-criteria").val().toLowerCase();
 // 	console.log("search-criteria=" + searchTerm);
-	// Iterate over all the panel divs
-	$(".panel").each(function() {
+	// Iterate over all the card divs
+	$(".library-card").each(function() {
 		var found = false;
 		// Search the titles
-		$(this).find(".panel-heading").each(function() {
+		$(this).find(".card-header").each(function() {
 			var refTitle = $(this).text().toLowerCase();
 			if (refTitle.indexOf(searchTerm) != -1) {
 				// The search term was found in this refTitle, set the found variable true
@@ -104,7 +106,7 @@ function searchRefs() {
 			}
 		});
 		// Iterate over the list of tags
-		$(this).find(".panel-body ul").each(function() {
+		$(this).find(".card-body ul").each(function() {
 			// get a tag in lower case
 			var tag = $(this).text().toLowerCase();
 // 			console.log("tag=" + tag);
@@ -116,9 +118,8 @@ function searchRefs() {
 				return false;
 			}
 		});
-		// Set the visibility of the containing panel based on whether or not the search term was found in the list of tags
-		$(this).closest('.panel')[found ? 'show' : 'hide']();
+		// Set the visibility of the containing column based on whether or not the search term was found
+		$(this).closest('.col-12')[found ? 'show' : 'hide']();
 	})
 	return false;
 }
-

@@ -65,8 +65,9 @@ var goHome = function(ele) {
 	$('#about-section').hide('slow');
 	$('#services-section').hide('slow');
 	$('#home-section').show('slow');
-	$('.navbar-content li').removeClass('active');
+	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');
+	$(ele).addClass('active');
 	scroll_Top();
 };
 
@@ -76,8 +77,9 @@ var goServices = function(ele) {
 	$('#portfolio-section').hide('slow');
 	$('#about-section').hide('slow');
 	$('#services-section').show('slow');
-	$('.navbar-content li').removeClass('active');
+	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');		
+	$(ele).addClass('active');		
 	scroll_Top();
 };
 
@@ -87,8 +89,9 @@ var goPortfolio = function(ele) {
 	$('#about-section').hide('slow');
 	$('#services-section').hide('slow');
 	$('#portfolio-section').show('slow');
-	$('.navbar-content li').removeClass('active');
+	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');	
+	$(ele).addClass('active');	
 	scroll_Top();
 };
 
@@ -98,8 +101,8 @@ var goAbout = function(ele) {
 	$('#services-section').hide('slow');
 	$('#portfolio-section').hide('slow');
 	$('#about-section').show('slow');
-	$('.navbar-content li').removeClass('active');
+	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');		
+	$(ele).addClass('active');		
 	scroll_Top();
 };
-
