@@ -17,13 +17,13 @@
 }
 
 .btn {
-    background-color: #008ed2;
+  background-color: #008ed2;
 	background-image: -moz-linear-gradient(top, #0092d6, #0078bc);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0092d6), to(#0078bc));
 	background-image: -webkit-linear-gradient(top, #0092d6, #0078bc);
-  	background-image: -o-linear-gradient(top, #0092d6, #0078bc);
+  background-image: -o-linear-gradient(top, #0092d6, #0078bc);
 	background-image: linear-gradient(to bottom, #0092d6, #0078bc);
-  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0092d6', endColorstr='#ff0078bc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0092d6', endColorstr='#ff0078bc', GradientType=0);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	font-weight: bold;
 	color: white;
@@ -35,10 +35,10 @@
 	background-image: -moz-linear-gradient(top, #0078CC, #0062c6);
 	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0078CC), to(#0062c6));
 	background-image: -webkit-linear-gradient(top, #0078CC, #0062c6);
-  	background-image: -o-linear-gradient(top, #0078CC, #0062c6);
+  background-image: -o-linear-gradient(top, #0078CC, #0062c6);
 	background-image: linear-gradient(to bottom, #0078CC, #0062c6);
-  	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0078CC', endColorstr='#ff0062c6', GradientType=0);
-  	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0078CC', endColorstr='#ff0062c6', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	background-position: 0 0;
 }
 
@@ -92,7 +92,81 @@ h3 {
 }
 
 .navbar .nav > li > a {
-    padding: 10px 5px 10px;
+  padding: 10px 5px 10px;
+}
+
+.navbar {
+	padding-bottom: 0.25rem;
+	padding-top: 0.25rem;
+}
+
+.navbar .container-fluid {
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	gap: 0.75rem;
+	padding-bottom: 0;
+}
+
+.navbar-brand {
+	font-size: 1.47rem;
+	line-height: 1.2;
+	margin-right: 0;
+	white-space: nowrap;
+}
+
+.menu-button {
+	align-items: center;
+	background: transparent;
+	border-color: transparent;
+	display: inline-flex;
+	height: 2.25rem;
+	justify-content: center;
+	padding: 0;
+	width: 2.25rem;
+}
+
+.menu-button:hover,
+.menu-button:focus,
+.menu-button:active,
+.menu-button.show {
+	background: transparent;
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.menu-icon {
+	display: block;
+	height: 1.25rem;
+	width: 1.25rem;
+}
+
+.dropdown-menu {
+	min-width: 16rem;
+}
+
+.dropdown-header {
+	color: #333;
+	font-weight: 700;
+}
+
+.api-doc-link {
+	padding-left: 2rem;
+}
+
+.home-icon {
+	display: inline-block;
+	height: 1rem;
+	margin-right: 0.35rem;
+	vertical-align: -0.125rem;
+	width: 1rem;
+}
+
+@media (max-width: 420px) {
+	.navbar-brand {
+		font-size: 1.2rem;
+		max-width: calc(100% - 3rem);
+	}
 }
 
 .nav-pills .nav-link {

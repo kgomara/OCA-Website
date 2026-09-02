@@ -19,18 +19,32 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md bg-light border-bottom mb-4">
-		<div class="container">
-				<a class="navbar-brand d-none d-md-block" href="index.html">O'Mara Consulting Associates</a>
-				<div class="navbar-content">
-					<ul class="nav nav-tabs">
-						<li id="home-tab" class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-						<li id="services-tab" class="nav-item"><a class="nav-link" href="index.html#services-section">Services</a></li>
-						<li id="portfolio-tab" class="nav-item"><a class="nav-link" href="index.html#portfolio-section">Portfolio</a></li>
-						<li id="about-tab" class="nav-item"><a class="nav-link" href="index.html#about-section">About</a></li>
-						<li id="library-tab" class="nav-item active"><a class="nav-link active" href="tech-library.html">Bookshelf</a></li>
+	<nav class="navbar bg-light border-bottom mb-4">
+		<div class="container-fluid">
+				<div class="navbar-content dropdown">
+					<button class="btn btn-primary menu-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu">
+						<img class="menu-icon" src="img/icons/list.svg" alt="" aria-hidden="true">
+						<span class="visually-hidden">Menu</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li id="home-tab"><a class="dropdown-item" href="index.html"><img class="home-icon" src="img/icons/house.svg" alt="" aria-hidden="true"> Home</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li id="services-tab"><a class="dropdown-item" href="index.html#services-section">Services</a></li>
+						<li id="portfolio-tab"><a class="dropdown-item" href="index.html#portfolio-section">Portfolio</a></li>
+						<li id="about-tab"><a class="dropdown-item" href="index.html#about-section">Continuing Education</a></li>
+						<li id="library-tab"><a class="dropdown-item active" href="tech-library.html">Reference Library</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="https://github.com/kgomara">GitHub</a></li>
+						<li><a class="dropdown-item" href="https://www.linkedin.com/in/kevingomara/">LinkedIn</a></li>
+						<li><a class="dropdown-item" href="https://www.scrumalliance.org/community/profile/komara">Scrum Alliance</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">API Documentation</h6></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/koresume/index.html">KOResume</a></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/ocautilities/index.html">OCAUtilities</a></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/ocaeditablecollectionviewflowlayout/index.html">OCAEditCollectionViewFlowLayout</a></li>
 					</ul>
 				</div>
+				<a class="navbar-brand" href="index.html">O'Mara Consulting Associates</a>
 		</div>
 	</nav>
 	<div class="container-fluid">

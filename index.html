@@ -21,79 +21,37 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md bg-light border-bottom mb-4">
-		<div class="container">
-				<a class="navbar-brand d-none d-md-block" href="index.html">O'Mara Consulting Associates</a>
-				<div class="navbar-content">
-					<ul class="nav nav-tabs">
-						<li id="home-tab" class="nav-item active"><a class="nav-link active" href="#home-section">Home</a></li>
-						<li id="services-tab" class="nav-item"><a class="nav-link" href="#services-section">Services</a></li>
-						<li id="portfolio-tab" class="nav-item"><a class="nav-link" href="#portfolio-section">Portfolio</a></li>
-						<li id="about-tab" class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
-						<li id="library-tab" class="nav-item"><a class="nav-link" href="tech-library.html">Bookshelf</a></li>
+	<nav class="navbar bg-light border-bottom mb-4">
+		<div class="container-fluid">
+				<div class="navbar-content dropdown">
+					<button class="btn btn-primary menu-button" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Menu">
+						<img class="menu-icon" src="img/icons/list.svg" alt="" aria-hidden="true">
+						<span class="visually-hidden">Menu</span>
+					</button>
+					<ul class="dropdown-menu">
+						<li id="home-tab"><a class="dropdown-item active" href="#home-section"><img class="home-icon" src="img/icons/house.svg" alt="" aria-hidden="true"> Home</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li id="services-tab"><a class="dropdown-item" href="#services-section">Services</a></li>
+						<li id="portfolio-tab"><a class="dropdown-item" href="#portfolio-section">Portfolio</a></li>
+						<li id="about-tab"><a class="dropdown-item" href="#about-section">Continuing Education</a></li>
+						<li id="library-tab"><a class="dropdown-item" href="tech-library.html">Reference Library</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="https://github.com/kgomara">GitHub</a></li>
+						<li><a class="dropdown-item" href="https://www.linkedin.com/in/kevingomara/">LinkedIn</a></li>
+						<li><a class="dropdown-item" href="https://www.scrumalliance.org/community/profile/komara">Scrum Alliance</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><h6 class="dropdown-header">API Documentation</h6></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/koresume/index.html">KOResume</a></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/ocautilities/index.html">OCAUtilities</a></li>
+						<li><a class="dropdown-item api-doc-link" href="api-documentation/ocaeditablecollectionviewflowlayout/index.html">OCAEditCollectionViewFlowLayout</a></li>
 					</ul>
 				</div>
+				<a class="navbar-brand" href="index.html">O'Mara Consulting Associates</a>
 		</div>
 	</nav>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-3 d-none d-md-block">
-				<h3>Credentials</h3>
-				<p>Click the links below to explore my source code, career history, 
-					iPhone app, and industry certifications.</p>
-				<ul class="nav nav-pills flex-column">
-					<li><a href="https://github.com/kgomara">
-						GitHub account</a></li>
-					<li><a href="https://www.linkedin.com/in/kevingomara/">
-						LinkedIn profile</a></li>
-					<li><a href="https://www.scrumalliance.org/community/profile/komara">
-						Scrum Alliance Profile</a></li>
-					<li><a href="docs/KevinOMara-ScrumAlliance_CSM_Certificate.pdf">
-						CSM - Certified Scrum Master</a></li>
-					<li><a href="docs/KevinOMara-SCJP.pdf">
-						SCJP - Sun Certified programmer for Java Platform</a></li>
-					<li><a href="docs/AWSCertifiedDeveloperAssociate_CourseCertificate.pdf">
-						AWS Certified Developer Associate - Course</a></li>
-					<li><a href="docs/AWSCertifiedSolutionsArchitect.pdf">
-						AWS Certified Solutions Architect - Course</a></li>
-					<li><a href="docs/ios12Swift4_CompleteCourse_Certificate.pdf">
-						iOS12 & Swift4 App Development - Course</a></li>
-					<li><a href="docs/AppleWatchProgramming.pdf">
-						Apple Watch Programming - Course</a></li>
-					<li><a href="docs/LearnPragmaticMobXinReact_CourseCertificate.pdf">
-						MobX in React - Course</a></li>
-					<li><a href="docs/ReactNativeThePracticalGuide_Certificate.pdf">
-						React Native - Course</a></li>
-					<li><a href="docs/BuildAModernAndroidApp.pdf">
-						Modern Android - Course</a></li>
-					<li><a href="docs/CompleteReactNativeAndRedux.pdf">
-						React Native and Redux - Course</a></li>
-					<li><a href="docs/BuildAModernAndroidApp.pdf">
-						Modern Android Development - Course</a></li>
-					<li><a href="docs/CompleteFlutterDevelopmentUsingDart.pdf">
-						Flutter and Dart - Course</a></li>
-				</ul>
-				<h3>API documentation</h3>
-				<p>Click the links below to view API Documentation for my iOS projects.</p>
-				<ul class="nav nav-pills flex-column">
-					<li><a href="api-documentation/koresume/index.html">KOResume</a></li>
-					<li><a href="api-documentation/ocautilities/index.html">OCAUtilities</a></li>
-					<li><a href="api-documentation/ocaeditablecollectionviewflowlayout/index.html">OCAEditCollectionViewFlowLayout</a></li>
-				</ul>
-				<h3>Share Us!</h3>
-					<!-- AddToAny BEGIN -->
-					<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://omaraconsultingassoc.com/index.html">
-						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-						<a class="a2a_button_facebook"></a>
-						<a class="a2a_button_email"></a>
-						<a class="a2a_button_twitter"></a>
-						<a class="a2a_button_linkedin"></a>
-					</div>
-					<script async src="https://static.addtoany.com/menu/page.js"></script>
-					<!-- AddToAny END -->
-    			<div class="clear">&nbsp;</div>
-			</div>
-			<div id="home-section" class="col-md-9">
+			<div id="home-section" class="col-12">
 				<div class="hero-unit">
 					<h2 class="align-center">O'Mara Consulting Associates</h2>
 					<p class="sub-head">Where technology meets business.</p>
@@ -127,7 +85,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="services-section" class="col-md-9" style="display: none">
+			<div id="services-section" class="col-12" style="display: none">
 				<div class="hero-unit">
 					<h2>Services offered</h2>
 					<p class="sub-head">Contract programming, process improvement, and strategic
@@ -154,10 +112,10 @@
 					</div>
 				</div>
 			</div>
-			<div id="about-section" class="col-md-9" style="display: none">
+			<div id="about-section" class="col-12" style="display: none">
 				<div class="hero-unit">
 					<h2>About Kevin</h2>
-					<p class="sub-head">Use the links in the credentials area to explore source code from my
+					<p class="sub-head">Use the links in the menu to explore source code from my
 						iOS and Android apps; Java, Flutter, and HTML/CSS/JS projects; confirm my certifications;
 						and examine my continuing education efforts.</p>
 					<p class="sub-head">Contact me directly at <a href="mailto:kevin@omaraconsultingassoc.com">kevin@omaraconsultingassoc.com</a>.</p>
@@ -250,7 +208,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="portfolio-section" class="col-md-9" style="display: none">
+			<div id="portfolio-section" class="col-12" style="display: none">
 				<div class="hero-unit">
 					<h2>Examples of my work</h2>
 					<p class="sub-head">While many of my projects are "behind the firewall" enterprise
@@ -289,65 +247,6 @@
 						</p>
 					</div>
 				</div>
-			</div>
-			<div class="col-12 d-md-none">
-				<h3>Credentials</h3>
-				<p>Click the links below to explore my source code, career history, 
-					iPhone app, and industry certifications.</p>
-				<ul class="nav nav-pills flex-column">
-					<li><a href="https://github.com/kgomara">
-						GitHub account</a></li>
-					<li><a href="https://www.linkedin.com/in/kevingomara/">
-						LinkedIn profile</a></li>
-					<li><a href="https://www.scrumalliance.org/community/profile/komara">
-						Scrum Alliance Profile</a></li>
-					<li><a href="docs/KevinOMara-ScrumAlliance_CSM_Certificate.pdf">
-						CSM - Certified Scrum Master</a></li>
-					<li><a href="docs/KevinOMara-SCJP.pdf">
-						SCJP - Sun Certified programmer for Java Platform</a></li>
-					<li><a href="docs/AWSCertifiedDeveloperAssociate_CourseCertificate.pdf">
-						AWS Certified Developer Associate - Course</a></li>
-					<li><a href="docs/AWSCertifiedSolutionsArchitect.pdf">
-						AWS Certified Solutions Architect - Course</a></li>
-					<li><a href="docs/ios12Swift4_CompleteCourse_Certificate.pdf">
-						iOS12 & Swift4 App Development - Course</a></li>
-					<li><a href="docs/AppleWatchProgramming.pdf">
-						Apple Watch Programming - Course</a></li>
-					<li><a href="docs/LearnPragmaticMobXinReact_CourseCertificate.pdf">
-						MobX in React - Course</a></li>
-					<li><a href="docs/ReactNativeThePracticalGuide_Certificate.pdf">
-						React Native - Course</a></li>
-					<li><a href="docs/BuildAModernAndroidApp.pdf">
-						Modern Android - Course</a></li>
-					<li><a href="docs/CompleteReactNativeAndRedux.pdf">
-						React Native and Redux - Course</a></li>
-					<li><a href="docs/BuildAModernAndroidApp.pdf">
-						Modern Android Development - Course</a></li>
-					<li><a href="docs/CompleteFlutterDevelopmentUsingDart.pdf">
-						Flutter and Dart - Course</a></li>
-				</ul>
-				<h3>API documentation</h3>
-				<p>Click the links below to view API Documentation for my iOS projects.</p>
-				<ul class="nav nav-pills flex-column">
-					<li><a href="api-documentation/koresume/index.html">
-						KOResume</a></li>
-					<li><a href="api-documentation/ocautilities/index.html">
-						OCAUtilities</a></li>
-					<li><a href="api-documentation/ocaeditablecollectionviewflowlayout/index.html">
-						OCAEditCollectionViewFlowLayout</a></li>
-				</ul>
-				<h3>Share Us!</h3>
-					<!-- AddToAny BEGIN -->
-					<div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://omaraconsultingassoc.com/index.html">
-						<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-						<a class="a2a_button_facebook"></a>
-						<a class="a2a_button_email"></a>
-						<a class="a2a_button_twitter"></a>
-						<a class="a2a_button_linkedin"></a>
-					</div>
-					<script async src="https://static.addtoany.com/menu/page.js"></script>
-					<!-- AddToAny END -->
-    			<div class="clear">&nbsp;</div>
 			</div>
 		</div>
 	</div>
