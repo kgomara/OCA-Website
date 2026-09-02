@@ -25,6 +25,11 @@ $(document).ready(function () {
 		e.preventDefault();
 		goAbout(this);
 	});
+
+	$('#library-tab a').click(function(e) {
+		e.preventDefault();
+		goLibrary(this);
+	});
 		
 	// setup home page button handlers
 	$('#home-section #services-btn').click(function(e) {
@@ -66,6 +71,8 @@ function showSectionFromHash(hash) {
 		goPortfolio($('#portfolio-tab a'));
 	} else if (hash === '#about-section') {
 		goAbout($('#about-tab a'));
+	} else if (hash === '#library-section') {
+		goLibrary($('#library-tab a'));
 	}
 }
 
@@ -81,6 +88,7 @@ var goHome = function(ele) {
 	$('#portfolio-section').hide('slow');
 	$('#about-section').hide('slow');
 	$('#services-section').hide('slow');
+	$('#library-section').hide('slow');
 	$('#home-section').show('slow');
 	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');
@@ -93,6 +101,7 @@ var goServices = function(ele) {
 	$('#home-section').hide('slow');
 	$('#portfolio-section').hide('slow');
 	$('#about-section').hide('slow');
+	$('#library-section').hide('slow');
 	$('#services-section').show('slow');
 	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');		
@@ -105,6 +114,7 @@ var goPortfolio = function(ele) {
 	$('#home-section').hide('slow');
 	$('#about-section').hide('slow');
 	$('#services-section').hide('slow');
+	$('#library-section').hide('slow');
 	$('#portfolio-section').show('slow');
 	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');	
@@ -117,9 +127,23 @@ var goAbout = function(ele) {
 	$('#home-section').hide('slow');
 	$('#services-section').hide('slow');
 	$('#portfolio-section').hide('slow');
+	$('#library-section').hide('slow');
 	$('#about-section').show('slow');
 	$('.navbar-content li, .navbar-content a').removeClass('active');
 	$(ele).parent().addClass('active');		
 	$(ele).addClass('active');		
+	scroll_Top();
+};
+
+var goLibrary = function(ele) {
+	// Update the UI to Library state
+	$('#home-section').hide('slow');
+	$('#services-section').hide('slow');
+	$('#portfolio-section').hide('slow');
+	$('#about-section').hide('slow');
+	$('#library-section').show('slow');
+	$('.navbar-content li, .navbar-content a').removeClass('active');
+	$(ele).parent().addClass('active');
+	$(ele).addClass('active');
 	scroll_Top();
 };
