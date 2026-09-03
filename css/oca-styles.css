@@ -42,6 +42,13 @@
 	background-position:	0 0;
 }
 
+#home-section .btn,
+#home-section .btn:hover,
+#home-section .btn:focus,
+#home-section .btn:active {
+	color:							black;
+}
+
 h3 {
 	color:								#0088CC;
 }
