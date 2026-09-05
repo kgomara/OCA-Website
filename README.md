@@ -93,6 +93,8 @@ git switch master
 git pull --ff-only
 git merge --ff-only my-feature-branch
 git push origin master
+git tag -a v1.0.0 -m "Release version 1.0.0"
+git push origin v1.0.0
 ```
 
 If `git merge --ff-only` fails, stop and inspect before forcing the merge.
