@@ -65,6 +65,11 @@ h3 {
 	color:								white;
 }
 
+#education-section img {
+	height: 							auto;
+	max-width: 						100%;
+}
+
 #oca-footer {
 	padding:							10px 0px 10px 0px;
 	background-color:			#f2f2f2;
@@ -213,5 +218,10 @@ h3 {
 }
 
 .library-card {
+	max-width: 						100%;
 	word-break: 					break-word;
+}
+
+.library-card a {
+	overflow-wrap: 				anywhere;
 }
