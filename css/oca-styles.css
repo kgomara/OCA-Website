@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
-#about-section form {
+#education-section form {
 	background-color:		#F5F5F5;
 }
 
-#about-section legend {
+#education-section legend {
 	padding-left: 			20px;
 }
 
@@ -61,7 +61,7 @@ h3 {
 	padding-bottom: 			40px;
 }
 
-#about-section .hero-unit a {
+#education-section .hero-unit a {
 	color:								white;
 }
 

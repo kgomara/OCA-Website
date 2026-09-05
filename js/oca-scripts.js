@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		goPortfolio(this);
 	});
 	
-	document.querySelector('#about-tab a').addEventListener('click', function(e) {
+	document.querySelector('#education-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
-		goAbout(this);
+		goEducation(this);
 	});
 
 	document.querySelector('#library-tab a').addEventListener('click', function(e) {
@@ -40,9 +40,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		goPortfolio(document.querySelector('#portfolio-tab a'));
 	});
 	
-	document.querySelector('#home-section #about-btn').addEventListener('click', function(e) {
+	document.querySelector('#home-section #education-btn').addEventListener('click', function(e) {
 		e.preventDefault();
-		goAbout(document.querySelector('#about-tab a'));
+		goEducation(document.querySelector('#education-tab a'));
 	});
 
 	showSectionFromHash(window.location.hash);
@@ -59,7 +59,7 @@ function scroll_Top() {
 }
 
 function showSection(sectionId, ele) {
-	document.querySelectorAll('#home-section, #services-section, #portfolio-section, #about-section, #library-section').forEach(function(section) {
+	document.querySelectorAll('#home-section, #services-section, #portfolio-section, #education-section, #library-section').forEach(function(section) {
 		section.hidden = section.id !== sectionId;
 	});
 
@@ -82,8 +82,8 @@ function showSectionFromHash(hash) {
 		goServices(document.querySelector('#services-tab a'));
 	} else if (hash === '#portfolio-section') {
 		goPortfolio(document.querySelector('#portfolio-tab a'));
-	} else if (hash === '#about-section') {
-		goAbout(document.querySelector('#about-tab a'));
+	} else if (hash === '#education-section') {
+		goEducation(document.querySelector('#education-tab a'));
 	} else if (hash === '#library-section') {
 		goLibrary(document.querySelector('#library-tab a'));
 	}
@@ -111,9 +111,9 @@ var goPortfolio = function(ele) {
 	showSection('portfolio-section', ele);
 };
 
-var goAbout = function(ele) {
-	// Update the UI to About state
-	showSection('about-section', ele);
+var goEducation = function(ele) {
+	// Update the UI to Education state
+	showSection('education-section', ele);
 };
 
 var goLibrary = function(ele) {
