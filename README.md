@@ -6,7 +6,7 @@ Static website for O'Mara Consulting Associates.
 
 This repository contains a small static HTML/CSS/JavaScript website. The site is organized around a single `index.html` page with in-page sections for Home, Services, Portfolio, Continuing Education, and Reference Library.
 
-The Reference Library section renders a searchable collection of local PDF references from JavaScript data. The site uses Bootstrap 5.3.8 and jQuery from public CDNs, with project-specific styling and behavior in local files.
+The Reference Library section renders a searchable collection of local PDF references from JavaScript data. The site uses Bootstrap 5.3.8 from a public CDN, with project-specific styling and vanilla JavaScript behavior in local files.
 
 ## Structure
 

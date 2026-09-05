@@ -1,10 +1,8 @@
 /**
  * bookshelf.js
- * 
- * Just a tiny bit of JavaScript to handle navigation
  */
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 
 	// Sort the library into title order
 	libraryData.sort(compareTitles);
@@ -13,8 +11,16 @@ $(document).ready(function () {
 		append(referenceEntity.title, referenceEntity.tags, referenceEntity.url);
 	});
 	
-	console.log("References in library = " + libraryData.length);
-	
+	// console.log("References in library = " + libraryData.length);
+
+	document.getElementById('search-btn').addEventListener('click', searchRefs);
+	document.getElementById('search-criteria').addEventListener('keydown', function(e) {
+		if (e.key === 'Enter') {
+			e.preventDefault();
+			searchRefs();
+		}
+	});
+
 });
 
 function compareTitles(a, b) {
@@ -90,36 +96,32 @@ function makeUL(array) {
 
 function searchRefs() {
 	// Get the search criteria in lower case
-	var searchTerm = $("#search-criteria").val().toLowerCase();
+	var searchTerm = document.getElementById('search-criteria').value.toLowerCase();
 // 	console.log("search-criteria=" + searchTerm);
 	// Iterate over all the card divs
-	$(".library-card").each(function() {
+	document.querySelectorAll(".library-card").forEach(function(card) {
 		var found = false;
 		// Search the titles
-		$(this).find(".card-header").each(function() {
-			var refTitle = $(this).text().toLowerCase();
+		card.querySelectorAll(".card-header").forEach(function(cardHeader) {
+			var refTitle = cardHeader.textContent.toLowerCase();
 			if (refTitle.indexOf(searchTerm) != -1) {
 				// The search term was found in this refTitle, set the found variable true
 				found = true;
-				// ...and return from this function
-				return false;
 			}
 		});
 		// Iterate over the list of tags
-		$(this).find(".card-body ul").each(function() {
+		card.querySelectorAll(".card-body ul").forEach(function(tagList) {
 			// get a tag in lower case
-			var tag = $(this).text().toLowerCase();
+			var tag = tagList.textContent.toLowerCase();
 // 			console.log("tag=" + tag);
 			// Use indexOf to determine if the searchTerm is contained with the text of the tag
 			if (tag.indexOf(searchTerm) != -1) {
 				// The search term was found in this tag, set the found variable true
 				found = true;
-				// ...and return from this function
-				return false;
 			}
 		});
 		// Set the visibility of the containing column based on whether or not the search term was found
-		$(this).closest('.col-12')[found ? 'show' : 'hide']();
+		card.closest('.col-12').hidden = !found;
 	})
 	return false;
 }

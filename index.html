@@ -10,10 +10,9 @@
 	<meta property="og:url" content="https://omaraconsultingassoc.com" /> 
 	<meta property="og:title" content="O'Mara Consulting Associates" /> 
 	<meta property="og:description" content="Contract programming services and Agile consulting." /> 
-	<meta property="og:image" content="https://omaraconsultingassoc.com/img/ko_icon_512x512.png" /> 
+	<meta property="og:image" content="https://omaraconsultingassoc.com/img/ko_icon_512x512.png" />
 	<!-- 3rd party libraries -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 	<!-- Custom CSS and JS -->
 	<link rel="stylesheet" href="css/oca-styles.css">
@@ -67,7 +66,7 @@
 							<br>
 						</p>
 						<p class="text-center">
-							<a id="services-btn" class="btn" href="#services-section">Services</a>
+							<a id="services-btn" class="btn btn-primary" href="#services-section">Services</a>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -76,7 +75,7 @@
 							Links to live examples of work I've done for Fortune 50s, SMBs, and iPhone/Android apps. <br> &nbsp; <br>
 						</p>
 						<p class="text-center">
-							<a id="portfolio-btn" class="btn" href="#portfolio-section">Portfolio</a>
+							<a id="portfolio-btn" class="btn btn-primary" href="#portfolio-section">Portfolio</a>
 						</p>
 					</div>
 					<div class="col-md-4">
@@ -86,12 +85,12 @@
 						<br>
 						</p>
 						<p class="text-center">
-							<a id="about-btn" class="btn" href="#about-section">Certificates</a>
+							<a id="about-btn" class="btn btn-primary" href="#about-section">Certificates</a>
 						</p>
 					</div>
 				</div>
 			</div>
-			<div id="services-section" class="col-12" style="display: none">
+			<div id="services-section" class="col-12" hidden>
 				<div class="hero-unit">
 					<h2>Services offered</h2>
 					<p class="sub-head">Contract programming, process improvement, and strategic consulting. 
@@ -112,7 +111,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="about-section" class="col-12" style="display: none">
+			<div id="about-section" class="col-12" hidden>
 				<div class="hero-unit">
 					<h2>Continuing Education</h2>
 					<p class="sub-head">
@@ -236,7 +235,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="portfolio-section" class="col-12" style="display: none">
+			<div id="portfolio-section" class="col-12" hidden>
 				<div class="hero-unit">
 					<h2>Examples of my work</h2>
 					<p class="sub-head">While many of my projects are "behind the firewall" enterprise applications, the projects below are publicly available.</p>
@@ -271,14 +270,14 @@
 					</div>
 				</div>
 			</div>
-			<div id="library-section" class="col-12" style="display: none">
+			<div id="library-section" class="col-12" hidden>
 				<h1>OCA Reference Library</h1>
 				<div class="row">
 					<div id="search-container" class="col-sm-6 col-md-4 col-lg-3">
 						<div class="input-group">
 							<input id="search-criteria" type="text" class="form-control" placeholder="Search">
 							<span class="input-group-text">
-								<button class="btn btn-sm btn-primary" onclick="searchRefs()">
+								<button id="search-btn" class="btn btn-sm btn-primary" type="button">
 									Search
 								</button>
 							</span>

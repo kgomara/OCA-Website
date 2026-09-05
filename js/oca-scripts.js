@@ -1,50 +1,48 @@
 /**
  * oca-scripts.js
- * 
- * Just a tiny bit of JavaScript to handle navigation
  */
 
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', function () {
 	// setup the tab click handlers
-	$('#home-tab a').click(function(e) {
+	document.querySelector('#home-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
 		goHome(this);
 	});
 
-	$('#services-tab a').click(function(e) {
+	document.querySelector('#services-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
 		goServices(this);
 	});
 	
-	$('#portfolio-tab a').click(function(e) {
+	document.querySelector('#portfolio-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
 		goPortfolio(this);
 	});
 	
-	$('#about-tab a').click(function(e) {
+	document.querySelector('#about-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
 		goAbout(this);
 	});
 
-	$('#library-tab a').click(function(e) {
+	document.querySelector('#library-tab a').addEventListener('click', function(e) {
 		e.preventDefault();
 		goLibrary(this);
 	});
 		
 	// setup home page button handlers
-	$('#home-section #services-btn').click(function(e) {
+	document.querySelector('#home-section #services-btn').addEventListener('click', function(e) {
 		e.preventDefault();
-		goServices($('#services-tab a'));
+		goServices(document.querySelector('#services-tab a'));
 	});
 	
-	$('#home-section #portfolio-btn').click(function(e) {
+	document.querySelector('#home-section #portfolio-btn').addEventListener('click', function(e) {
 		e.preventDefault();
-		goPortfolio($('#portfolio-tab a'));
+		goPortfolio(document.querySelector('#portfolio-tab a'));
 	});
 	
-	$('#home-section #about-btn').click(function(e) {
+	document.querySelector('#home-section #about-btn').addEventListener('click', function(e) {
 		e.preventDefault();
-		goAbout($('#about-tab a'));
+		goAbout(document.querySelector('#about-tab a'));
 	});
 
 	showSectionFromHash(window.location.hash);
@@ -53,26 +51,41 @@ $(document).ready(function () {
 /**
  * Helper functions
  */
- function scroll_Top() {
-	$('html, body').animate({
-        scrollTop: 0
-    }, 500);
- }
+function scroll_Top() {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth'
+	});
+}
+
+function showSection(sectionId, ele) {
+	document.querySelectorAll('#home-section, #services-section, #portfolio-section, #about-section, #library-section').forEach(function(section) {
+		section.hidden = section.id !== sectionId;
+	});
+
+	document.querySelectorAll('.navbar-content li, .navbar-content a').forEach(function(navElement) {
+		navElement.classList.remove('active');
+	});
+
+	ele.parentElement.classList.add('active');
+	ele.classList.add('active');
+	scroll_Top();
+}
 
 function showSectionFromHash(hash) {
 	if (hash === '#home-section') {
-		goHome($('#home-tab a'));
+		goHome(document.querySelector('#home-tab a'));
 		window.setTimeout(function() {
 			window.scrollTo(0, 0);
 		}, 600);
 	} else if (hash === '#services-section') {
-		goServices($('#services-tab a'));
+		goServices(document.querySelector('#services-tab a'));
 	} else if (hash === '#portfolio-section') {
-		goPortfolio($('#portfolio-tab a'));
+		goPortfolio(document.querySelector('#portfolio-tab a'));
 	} else if (hash === '#about-section') {
-		goAbout($('#about-tab a'));
+		goAbout(document.querySelector('#about-tab a'));
 	} else if (hash === '#library-section') {
-		goLibrary($('#library-tab a'));
+		goLibrary(document.querySelector('#library-tab a'));
 	}
 }
 
@@ -85,65 +98,25 @@ function showSectionFromHash(hash) {
  */
 var goHome = function(ele) {
 	// Update the UI to Home state
-	$('#portfolio-section').hide('slow');
-	$('#about-section').hide('slow');
-	$('#services-section').hide('slow');
-	$('#library-section').hide('slow');
-	$('#home-section').show('slow');
-	$('.navbar-content li, .navbar-content a').removeClass('active');
-	$(ele).parent().addClass('active');
-	$(ele).addClass('active');
-	scroll_Top();
+	showSection('home-section', ele);
 };
 
 var goServices = function(ele) {
 	// Update the UI to Services state
-	$('#home-section').hide('slow');
-	$('#portfolio-section').hide('slow');
-	$('#about-section').hide('slow');
-	$('#library-section').hide('slow');
-	$('#services-section').show('slow');
-	$('.navbar-content li, .navbar-content a').removeClass('active');
-	$(ele).parent().addClass('active');		
-	$(ele).addClass('active');		
-	scroll_Top();
+	showSection('services-section', ele);
 };
 
 var goPortfolio = function(ele) {
 	// Update the UI to Portfolio state
-	$('#home-section').hide('slow');
-	$('#about-section').hide('slow');
-	$('#services-section').hide('slow');
-	$('#library-section').hide('slow');
-	$('#portfolio-section').show('slow');
-	$('.navbar-content li, .navbar-content a').removeClass('active');
-	$(ele).parent().addClass('active');	
-	$(ele).addClass('active');	
-	scroll_Top();
+	showSection('portfolio-section', ele);
 };
 
 var goAbout = function(ele) {
 	// Update the UI to About state
-	$('#home-section').hide('slow');
-	$('#services-section').hide('slow');
-	$('#portfolio-section').hide('slow');
-	$('#library-section').hide('slow');
-	$('#about-section').show('slow');
-	$('.navbar-content li, .navbar-content a').removeClass('active');
-	$(ele).parent().addClass('active');		
-	$(ele).addClass('active');		
-	scroll_Top();
+	showSection('about-section', ele);
 };
 
 var goLibrary = function(ele) {
 	// Update the UI to Library state
-	$('#home-section').hide('slow');
-	$('#services-section').hide('slow');
-	$('#portfolio-section').hide('slow');
-	$('#about-section').hide('slow');
-	$('#library-section').show('slow');
-	$('.navbar-content li, .navbar-content a').removeClass('active');
-	$(ele).parent().addClass('active');
-	$(ele).addClass('active');
-	scroll_Top();
+	showSection('library-section', ele);
 };
