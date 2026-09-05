@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		link.addEventListener('click', function(e) {
 			e.preventDefault();
 			showSectionFromHash(this.hash, true);
+			closeMenu();
 		});
 	});
 
@@ -72,4 +73,18 @@ function getNavLink(sectionHash) {
 	return navLinks.find(function(link) {
 		return link.getAttribute('href') === sectionHash;
 	});
+}
+
+function closeMenu() {
+	var menuButton = document.querySelector('.menu-button');
+
+	if (!menuButton || !window.bootstrap) {
+		return;
+	}
+
+	var dropdown = bootstrap.Dropdown.getOrCreateInstance(menuButton);
+
+	if (dropdown) {
+		dropdown.hide();
+	}
 }
