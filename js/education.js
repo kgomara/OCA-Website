@@ -3,10 +3,26 @@
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-	educationData.forEach(function(educationItem) {
-		appendEducationItem(educationItem);
-	});
+	loadEducationData();
 });
+
+function loadEducationData() {
+	fetch('js/education-data.json')
+		.then(function(response) {
+			if (!response.ok) {
+				throw new Error('Unable to load Education data.');
+			}
+			return response.json();
+		})
+		.then(function(educationData) {
+			educationData.forEach(function(educationItem) {
+				appendEducationItem(educationItem);
+			});
+		})
+		.catch(function(error) {
+			console.error(error);
+		});
+}
 
 function appendEducationItem(educationItem) {
 	var grid = document.getElementById('education-grid');

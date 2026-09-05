@@ -3,15 +3,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', function () {
-
-	// Sort the library into title order
-	libraryData.sort(compareTitles);
-	// iterate oca-bookshelf-scripts.js array to load all the documents
-	libraryData.forEach(function(referenceEntity) {
-		append(referenceEntity.title, referenceEntity.tags, referenceEntity.url);
-	});
-	
-	// console.log("References in library = " + libraryData.length);
+	loadLibraryData();
 
 	document.getElementById('search-btn').addEventListener('click', searchRefs);
 	document.getElementById('search-criteria').addEventListener('keydown', function(e) {
@@ -20,8 +12,28 @@ document.addEventListener('DOMContentLoaded', function () {
 			searchRefs();
 		}
 	});
-
 });
+
+function loadLibraryData() {
+	fetch('js/reference-library-data.json')
+		.then(function(response) {
+			if (!response.ok) {
+				throw new Error('Unable to load Reference Library data.');
+			}
+			return response.json();
+		})
+		.then(function(libraryData) {
+			// Sort the library into title order
+			libraryData.sort(compareTitles);
+			// iterate reference-library-data.json array to load all the documents
+			libraryData.forEach(function(referenceEntity) {
+				append(referenceEntity.title, referenceEntity.tags, referenceEntity.url);
+			});
+		})
+		.catch(function(error) {
+			console.error(error);
+		});
+}
 
 function compareTitles(a, b) {
 	if (a.title.toLowerCase() < b.title.toLowerCase())
@@ -68,7 +80,7 @@ function makeHref(url, title) {
 	// ...and and href attribute with the url
 	aTag.setAttribute('href', url);
 	// ...set the link text with the document title
-	aTag.innerHTML = title;
+	aTag.textContent = title;
 	
 	return aTag;
 }

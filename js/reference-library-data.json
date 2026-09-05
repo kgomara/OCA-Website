@@ -1,0 +1,1011 @@
+[
+	{
+		"type": "refcard",
+		"title": "Agile Adoption: Reducing Cost",
+		"url": "library/agile_adoption-reducecost.pdf",
+		"tags": [
+			"agile",
+			"scrum"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Agile Adoption: Decreasing Time to Market",
+		"url": "library/agile_adoption.pdf",
+		"tags": [
+			"agile",
+			"scrum"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Agile Adoption: Improving Software Quality",
+		"url": "library/agile_improve_quality.pdf",
+		"tags": [
+			"agile",
+			"scrum"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Code Gems for Android Developers",
+		"url": "library/android.pdf",
+		"tags": [
+			"android",
+			"code",
+			"mobile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Essential Apache HTTP Server",
+		"url": "library/ApacheHTTPD_1.pdf",
+		"tags": [
+			"apache",
+			"http",
+			"server"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Camel Essential Components",
+		"url": "library/camel_0.pdf",
+		"tags": [
+			"camel",
+			"eai"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Apache Cassandra",
+		"url": "library/Cassandra.pdf",
+		"tags": [
+			"cassandra",
+			"apache",
+			"nosql"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "CI: Servers and Tools",
+		"url": "library/ci_servers_tools_0.pdf",
+		"tags": [
+			"ci",
+			"hudson"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Cloud Computing",
+		"url": "library/cloud-computing.pdf",
+		"tags": [
+			"cloud",
+			"aws",
+			"gae",
+			"azure"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "CI: Patterns and Anti-Patterns",
+		"url": "library/continuous-integration_1_0.pdf",
+		"tags": [
+			"ci",
+			"patterns"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Couchbase API",
+		"url": "library/couchbaseAPI_2.pdf",
+		"tags": [
+			"couchbase",
+			"nosql"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Core C++",
+		"url": "library/cpp_5.pdf",
+		"tags": [
+			"code",
+			"c++",
+			"oo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "CSS3: Basics",
+		"url": "library/css3_basics.pdf",
+		"tags": [
+			"css"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Deployment Automation Patterns",
+		"url": "library/DAP_2.pdf",
+		"tags": [
+			"deployment",
+			"patterns"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Core Dart: Client Web Language",
+		"url": "library/dart_1.pdf",
+		"tags": [
+			"dart",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Data Mining",
+		"url": "library/data-mining_0.pdf",
+		"tags": [
+			"data mining",
+			"python"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Data Warehousing",
+		"url": "library/DataWarehousing.pdf",
+		"tags": [
+			"data warehouse"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Database Partioning with MySQL",
+		"url": "library/DBPartitioning_2.pdf",
+		"tags": [
+			"mysql"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Debugging Javascript",
+		"url": "library/DebuggingJavascript_2.pdf",
+		"tags": [
+			"javascript",
+			"debugging",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Design Patterns",
+		"url": "library/designpatterns.pdf",
+		"tags": [
+			"patterns",
+			"oo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Practical DNS",
+		"url": "library/DNS.pdf",
+		"tags": [
+			"dns",
+			"network"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Docker",
+		"url": "library/docker.pdf",
+		"tags": [
+			"deployment",
+			"docker"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Drupal",
+		"url": "library/drupal_1.pdf",
+		"tags": [
+			"drupal",
+			"content management"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Eclipse",
+		"url": "library/eclipse_online.pdf",
+		"tags": [
+			"eclipse",
+			"ide"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "EclipseLink JPA",
+		"url": "library/eclipselinkjpa-3_1.pdf",
+		"tags": [
+			"jpa",
+			"orm"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Essential Admin for MySQL 5.5",
+		"url": "library/MySQL_UPDATE_110512.pdf",
+		"tags": [
+			"mysql"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with FitNesse",
+		"url": "library/fitnesse_1.pdf",
+		"tags": [
+			"fitnesse",
+			"testing",
+			"qa"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Adobe Flash Builder 4.5",
+		"url": "library/flashbuilder45_1.pdf",
+		"tags": [
+			"ide",
+			"flash"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Flex Mobile Development",
+		"url": "library/FlexMobileDevelopment_0.pdf",
+		"tags": [
+			"ide",
+			"flash",
+			"android",
+			"ios",
+			"mobile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Git",
+		"url": "library/git_2.pdf",
+		"tags": [
+			"git",
+			"scm",
+			"vcs"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Git Patterns and Anti-Patterns",
+		"url": "library/git-patterns-antipatterns_1.pdf",
+		"tags": [
+			"git",
+			"patterns"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Glassfish",
+		"url": "library/glassfish-appserver-update_1.pdf",
+		"tags": [
+			"glassfish",
+			"application server"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Google App Engine for Java",
+		"url": "library/google-app-engine-4.pdf",
+		"tags": [
+			"gae",
+			"java"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Apache HBase",
+		"url": "library/HBase_5.pdf",
+		"tags": [
+			"apache",
+			"nosql",
+			"hadoop",
+			"hbase"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTML5 Evolution of Web Standards",
+		"url": "library/html5_1.pdf",
+		"tags": [
+			"html"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTML5 Canvas",
+		"url": "library/html5-canvas_0.pdf",
+		"tags": [
+			"html",
+			"canvas"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTML5 Mobile Development",
+		"url": "library/html5-mobile_0.pdf",
+		"tags": [
+			"html",
+			"mobile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTML5 Web Workers",
+		"url": "library/HTML5-webworkers_0.pdf",
+		"tags": [
+			"html",
+			"javascript"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTTP: The Hypertext Transfer Protocol",
+		"url": "library/HTTP_0.pdf",
+		"tags": [
+			"http",
+			"network"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "IoT: DZone Executive Guide",
+		"url": "library/iot-2.pdf",
+		"tags": [
+			"iot"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Java Enterprise Edition 7",
+		"url": "library/JavaEE7.pdf",
+		"tags": [
+			"java",
+			"application server"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Java Enterprise Edition 6",
+		"url": "library/JEE6-1_1.pdf",
+		"tags": [
+			"java",
+			"application server"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Jenkins on PaaS",
+		"url": "library/JenkinsonPaaS.pdf",
+		"tags": [
+			"jenkins",
+			"saas",
+			"ci"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "JQuery Selectors",
+		"url": "library/jquery_online.pdf",
+		"tags": [
+			"jquery",
+			"javascript",
+			"html",
+			"css"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "JUnit and EasyMock",
+		"url": "library/junit_0.pdf",
+		"tags": [
+			"java",
+			"junit",
+			"mock",
+			"tdd",
+			"testing",
+			"qa"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Kanban",
+		"url": "library/kanban_8.pdf",
+		"tags": [
+			"kanban",
+			"agile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Lean Software Development",
+		"url": "library/leansd_0.pdf",
+		"tags": [
+			"lean",
+			"agile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Mockito: A Simple, Intuitive Mocking Framework",
+		"url": "library/Mockito_4.pdf",
+		"tags": [
+			"junit",
+			"mock",
+			"tdd",
+			"testing",
+			"qa"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Patterns of Modular Architecture",
+		"url": "library/ModularityPatterns_0.pdf",
+		"tags": [
+			"patterns",
+			"oo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "MongoDB: Flexible NoSQL for Humongous Data",
+		"url": "library/MongoDB.pdf",
+		"tags": [
+			"nosql",
+			"mongo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "MVVM Design Pattern",
+		"url": "library/mvvm_0.pdf",
+		"tags": [
+			"mvvm",
+			"patterns",
+			"oo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "NetBeans Platform 7.0",
+		"url": "library/netbeansIDE7.pdf",
+		"tags": [
+			"netbeans"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Object-Oriented JavaScript",
+		"url": "library/Object-oriented-js_4.pdf",
+		"tags": [
+			"oo",
+			"javascript"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Objective-C: for the iPhone and iPad",
+		"url": "library/objective-c_0.pdf",
+		"tags": [
+			"objc",
+			"ios"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with PhoneGap",
+		"url": "library/phonegap.pdf",
+		"tags": [
+			"phonegap",
+			"mobile",
+			"ios",
+			"android"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "PHP 5.4",
+		"url": "library/PHP5.4.pdf",
+		"tags": [
+			"php",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "PHPUnit: PHP Test-Driven Development",
+		"url": "library/phpunit_1.pdf",
+		"tags": [
+			"phpunit",
+			"php",
+			"tdd"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Core Python",
+		"url": "library/Python_2.pdf",
+		"tags": [
+			"python",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Refactoring Patterns",
+		"url": "library/Refactoring.pdf",
+		"tags": [
+			"refactor",
+			"patterns"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Regular Expressions",
+		"url": "library/regex.pdf",
+		"tags": [
+			"regex"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Binary Repository Management",
+		"url": "library/repo-management_1.pdf",
+		"tags": [
+			"html",
+			"javascript"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "REST: Foundations of RESTful Architecture",
+		"url": "library/rest_1.pdf",
+		"tags": [
+			"rest"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Essential Ruby",
+		"url": "library/ruby.pdf",
+		"tags": [
+			"ruby",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Scala The Scalable JVM Language",
+		"url": "library/scala.pdf",
+		"tags": [
+			"scala",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Scalability and High Availability",
+		"url": "library/scalability_3.pdf",
+		"tags": [
+			"scalability",
+			"ha"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Scrum",
+		"url": "library/scrum_2.pdf",
+		"tags": [
+			"scrum",
+			"agile"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Sencha Touch HTML5 Mobile Web Development",
+		"url": "library/Sencha-Touch.pdf",
+		"tags": [
+			"sencha touch",
+			"mobile",
+			"html",
+			"ios",
+			"android"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Core Spring Data",
+		"url": "library/Spring-Data.pdf",
+		"tags": [
+			"server",
+			"spring"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Spring Integration",
+		"url": "library/SpringIntegration_0.pdf",
+		"tags": [
+			"spring",
+			"eai"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Spring Roo: Rapid Application Development for Java",
+		"url": "library/springroo.pdf",
+		"tags": [
+			"spring",
+			"java"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Eclipse Tools for Spring: SpringSource Tool Suite",
+		"url": "library/springsts.pdf",
+		"tags": [
+			"spring",
+			"eclipse",
+			"java"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Spring Web Flow",
+		"url": "library/springwebflow.pdf",
+		"tags": [
+			"spring"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Swift",
+		"url": "library/swift.pdf",
+		"tags": [
+			"swift",
+			"ios",
+			"code"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with UML",
+		"url": "library/uml.pdf",
+		"tags": [
+			"uml",
+			"oo"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Getting Started with Visual Studio 2010",
+		"url": "library/visualstudio10.pdf",
+		"tags": [
+			"visual studio",
+			"code",
+			"ide"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "HTML5 WebSocket: Full-duplex, Real-time Web Communication",
+		"url": "library/Websocket_1.pdf",
+		"tags": [
+			"html",
+			"web socket",
+			"network"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Windows Phone 7",
+		"url": "library/wp7.pdf",
+		"tags": [
+			"mobile",
+			"windows phone"
+		]
+	},
+	{
+		"type": "refcard",
+		"title": "Using XML in Java",
+		"url": "library/xml.pdf",
+		"tags": [
+			"xml",
+			"code",
+			"java"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Scrum Intro: A Fit for You?",
+		"url": "library/IntroductionToScrum.pdf",
+		"tags": [
+			"scrum",
+			"agile"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Introduction To User Stories",
+		"url": "library/IntroductionToUserStories.pdf",
+		"tags": [
+			"scrum",
+			"agile"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "DevOps Without Dev is Dead on Arrival",
+		"url": "library/DevOps_wo_Dev_DOA-final.pdf",
+		"tags": [
+			"deployment",
+			"devops"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Fail-Safe Application Deployment",
+		"url": "library/failsafeappdeploy.pdf",
+		"tags": [
+			"deployment",
+			"devops"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Introduction to Cloud Computing Architecture",
+		"url": "library/CloudComputing.pdf",
+		"tags": [
+			"cloud"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Capability Maturity Model® Integration 1.1",
+		"url": "library/CMMI02tr004.pdf",
+		"tags": [
+			"capability maturity model integation"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Deconstructing a Branch with Git",
+		"url": "library/CollabNet_DeconstructingaBranchwithGit.pdf",
+		"tags": [
+			"git",
+			"collabnet"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Which SCM? The Pros and Cons of Git and Subversion",
+		"url": "library/CollabNet_GitGuide_GitandSVN.pdf",
+		"tags": [
+			"git",
+			"svn",
+			"collabnet"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Git for the Enterprise: Secure, Scalable, Standards-Compliant",
+		"url": "library/GitForTheEnterprise_CollabNet.pdf",
+		"tags": [
+			"git",
+			"collabnet"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Interactive Data Visualization for the Web",
+		"url": "library/Interactive_Data_Visualization_for_the_Web.pdf",
+		"tags": [
+			"html",
+			"javascript",
+			"css"
+		]
+	},
+	{
+		"type": "book",
+		"title": "iOS 7 Programming Cookbook",
+		"url": "library/iOS_7_Programming_Cookbook.pdf",
+		"tags": [
+			"ios",
+			"code",
+			"objc"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Jump Start Rails",
+		"url": "library/Jump_Start_Rails.pdf",
+		"tags": [
+			"rails",
+			"code"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Learning Node",
+		"url": "library/Learning_Node.pdf",
+		"tags": [
+			"node",
+			"javascript",
+			"code"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "NIST Working Definition of Cloud Computing",
+		"url": "library/NSIT-cloud-def-v15.pdf",
+		"tags": [
+			"cloud"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "OPEN SOURCE & CLOUD COMPUTING: ON-DEMAND, INNOVATIVE IT ON A MASSIVE SCALE",
+		"url": "library/open_cloud.pdf",
+		"tags": [
+			"cloud"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "GUIDE to USING OPEN-SOURCE SOFTWARE to DEVELOP WEB APPLICATIONS",
+		"url": "library/open_web_platform.pdf",
+		"tags": [
+			"code"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Programming iOS 7",
+		"url": "library/Programming_iOS_7_Fourth_Edition.pdf",
+		"tags": [
+			"ios",
+			"code",
+			"objc"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Python Cookbook",
+		"url": "library/Python_Cookbook_Third_Edition.pdf",
+		"tags": [
+			"python",
+			"code"
+		]
+	},
+	{
+		"type": "book",
+		"title": "RESTful Web APIs",
+		"url": "library/RESTful_Web_APIs.pdf",
+		"tags": [
+			"rest"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Smart Internet of Things Projects",
+		"url": "library/Smart_Internet_of_Things_Projects.pdf",
+		"tags": [
+			"iot"
+		]
+	},
+	{
+		"type": "book",
+		"title": "Test-Driven Development with Python",
+		"url": "library/Test_Driven_Development_with_Python.pdf",
+		"tags": [
+			"tdd",
+			"python",
+			"testing",
+			"qa"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "How to Offer the Strongest SSL Encryption",
+		"url": "library/VerisignSSLEncryption.pdf",
+		"tags": [
+			"ssl",
+			"encryption"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Writing Robust Java Code: Coding Standards",
+		"url": "library/javaCodingStandards.pdf",
+		"tags": [
+			"java",
+			"code"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Agile Contracts: Money for Nothing and Your Change for Free",
+		"url": "library/Agile2008MoneyforNothing.pdf",
+		"tags": [
+			"agile",
+			"scrum"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Agile Retrospectives: Making Good Teams Great!",
+		"url": "library/AgileRetrospectives-MakingGoodTeamsGreat.pdf",
+		"tags": [
+			"agile",
+			"scrum"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Intro to Scrum: Scrum Master Course Materials",
+		"url": "library/scrum_intro.pdf",
+		"tags": [
+			"scrum",
+			"agile"
+		]
+	},
+	{
+		"type": "other",
+		"title": "The New New Product Development Game",
+		"url": "library/TheNewNewProductDevelopmentGame.pdf",
+		"tags": [
+			"scrum",
+			"agile"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Subversion Cheat Sheet",
+		"url": "library/subversion-cheat-sheet-v1.pdf",
+		"tags": [
+			"svn",
+			"vcs"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Subversion Quick Reference Card",
+		"url": "library/SubversionQuickReferenceCard.pdf",
+		"tags": [
+			"svn",
+			"vcs"
+		]
+	},
+	{
+		"type": "other",
+		"title": "Functional Requirements and Use Cases",
+		"url": "library/functreq.pdf",
+		"tags": [
+			"uml",
+			"use case",
+			"requirements"
+		]
+	},
+	{
+		"type": "dzone",
+		"title": "Version Control with Git",
+		"url": "library/Version_Control_with_Git_Second_Edition.pdf",
+		"tags": [
+			"git",
+			"scm",
+			"vcs"
+		]
+	}
+]
