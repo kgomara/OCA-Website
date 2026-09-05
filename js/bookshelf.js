@@ -15,13 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadLibraryData() {
-	fetch('js/reference-library-data.json')
-		.then(function(response) {
-			if (!response.ok) {
-				throw new Error('Unable to load Reference Library data.');
-			}
-			return response.json();
-		})
+	loadJsonData('js/reference-library-data.json', 'Unable to load Reference Library data.')
 		.then(function(libraryData) {
 			// Sort the library into title order
 			libraryData.sort(compareTitles);
@@ -29,9 +23,6 @@ function loadLibraryData() {
 			libraryData.forEach(function(referenceEntity) {
 				append(referenceEntity.title, referenceEntity.tags, referenceEntity.url);
 			});
-		})
-		.catch(function(error) {
-			console.error(error);
 		});
 }
 
@@ -47,36 +38,32 @@ function append(title, tags, url) {
 	// Get the div that is the grid container
 	var grid = document.getElementById('grid');
 	
-	var column = document.createElement('div');
-	column.className = "col-12 col-sm-6 col-lg-3";
+	var column = makeElement('div', "col-12 col-sm-6 col-lg-3");
 
-	var card = document.createElement('div');
-	card.className ="card h-100 library-card";
+	var card = makeElement('div', "card h-100 library-card");
 
 	// Create a card heading object to contain the document title as a link
-	var	panelHead = document.createElement('div');
-	panelHead.className = "card-header";
+	var	panelHead = makeElement('div', "card-header");
 	// ...create the <a href... anchor and append it to the panel heading div
 	panelHead.appendChild(makeHref(url, title));
 	// ...append the card heading to the card
 	card.appendChild(panelHead);
 	
 	// Create the card body and set its classes
-	var	panelBody = document.createElement('div');
-	panelBody.className = "card-body";
+	var	panelBody = makeElement('div', "card-body");
 	// ...create a <ul... of the tags and append it to the panel body div
 	panelBody.appendChild(makeUL(tags));
 	// ...append the card body to the card
 	card.appendChild(panelBody);
 	
 	// Finally, append the card to the grid container
-	column.appendChild(card);
+	appendChildren(column, [card]);
 	grid.appendChild(column);
 }
 
 function makeHref(url, title) {
 	// Create an anchor element
-	var aTag = document.createElement('a');
+	var aTag = makeElement('a');
 	// ...and and href attribute with the url
 	aTag.setAttribute('href', url);
 	// ...set the link text with the document title
@@ -88,9 +75,7 @@ function makeHref(url, title) {
 
 function makeUL(array) {
     // Create the list element:
-    var list = document.createElement('ul');
-    // ...set the classes - list-inline is bootstrap class that will layout the list elements horizontally
-    list.className = "list-inline";
+	var list = makeElement('ul', "list-inline");
 
 	// iterate of the array of tags and create <li> elements for each
     for(var i = 0; i < array.length; i++) {

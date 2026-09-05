@@ -15,6 +15,7 @@ index.html                  Main single-page website
 css/
   oca-styles.css            Project-specific styles
 js/
+  dom-helpers.js            Shared rendering helpers
   education-data.json       Continuing Education data
   education.js              Continuing Education rendering
   oca-scripts.js            Section navigation behavior

@@ -7,37 +7,24 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function loadEducationData() {
-	fetch('js/education-data.json')
-		.then(function(response) {
-			if (!response.ok) {
-				throw new Error('Unable to load Education data.');
-			}
-			return response.json();
-		})
+	loadJsonData('js/education-data.json', 'Unable to load Education data.')
 		.then(function(educationData) {
 			educationData.forEach(function(educationItem) {
 				appendEducationItem(educationItem);
 			});
-		})
-		.catch(function(error) {
-			console.error(error);
 		});
 }
 
 function appendEducationItem(educationItem) {
 	var grid = document.getElementById('education-grid');
 
-	var column = document.createElement('div');
-	column.className = "col-md-4";
+	var column = makeElement('div', "col-md-4");
 
-	var heading = document.createElement('h4');
-	heading.textContent = educationItem.title;
+	var heading = makeElement('h4', "", educationItem.title);
 
-	var description = document.createElement('p');
-	description.textContent = educationItem.description;
+	var description = makeElement('p', "", educationItem.description);
 
-	var linkContainer = document.createElement('p');
-	linkContainer.className = "text-center";
+	var linkContainer = makeElement('p', "text-center");
 
 	var link = document.createElement('a');
 	link.setAttribute('href', educationItem.url);
@@ -55,9 +42,7 @@ function appendEducationItem(educationItem) {
 	}
 
 	link.appendChild(thumbnail);
-	linkContainer.appendChild(link);
-	column.appendChild(heading);
-	column.appendChild(description);
-	column.appendChild(linkContainer);
+	appendChildren(linkContainer, [link]);
+	appendChildren(column, [heading, description, linkContainer]);
 	grid.appendChild(column);
 }
